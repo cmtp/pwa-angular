@@ -22,7 +22,7 @@ import { LogroComponent } from './logro/logro.component';
     LogroComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     MatToolbarModule,
     MatCardModule,
     MatListModule,
