@@ -4,10 +4,10 @@ import { ILogro } from "../home/home.component";
 @Injectable()
 export class LogrosService {
 
-  constructor() { }
+  logros: ILogro[];
 
-  getAll(): ILogro[] {
-    return [
+  constructor() {
+    this.logros = [
       {
         id: 1, 
         title: 'Logre algo muy interesante', 
@@ -38,6 +38,14 @@ export class LogrosService {
         title: 'Logre algo muy interesante', 
         description: 'Lorem ipsum'
       }
-    ]
+    ];
+  }
+
+  find(id: number): ILogro {
+    return this.logros.find((logro) => logro.id == id);
+  }
+
+  getAll(): ILogro[] {
+    return this.logros;
   }
 }
