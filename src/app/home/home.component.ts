@@ -7,9 +7,52 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  logros: ILogro[];
+  title: string = 'Bienvenido';
+
   constructor() { }
 
   ngOnInit() {
+    this.logros = this.getLogros();
   }
 
+  getLogros(): ILogro[] {
+    return [
+      {
+        id: 1, 
+        title: 'Logre algo muy interesante', 
+        description: 'Lorem ipsum'
+      },
+      {
+        id: 2, 
+        title: 'Logre algo muy interesante', 
+        description: 'Lorem ipsum'
+      },
+      {
+        id: 3, 
+        title: 'Logre algo muy interesante', 
+        description: 'Lorem ipsum'
+      },
+      {
+        id: 4, 
+        title: 'Logre algo muy interesante', 
+        description: 'Lorem ipsum'
+      },
+      {
+        id: 5, 
+        title: 'Logre algo muy interesante', 
+        description: 'Lorem ipsum'
+      }
+    ]
+  }
+
+}
+// id, title, description
+
+interface ILogro {
+  id: number;
+  title: string;
+  description ?: string; //opcional
+
+  
 }
