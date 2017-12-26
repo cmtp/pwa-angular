@@ -7,16 +7,20 @@ import { HomeComponent } from './home/home.component';
 
 import {MatToolbarModule, MatToolbar} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

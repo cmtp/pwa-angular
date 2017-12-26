@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
       {
         id: 1, 
         title: 'Logre algo muy interesante', 
-        description: 'Lorem ipsum'
+        description: 'Lorem ipsum dasdjkasld sdjakl sjdsadjajsd sdas dsad jasldaskldjalksdj kjsdal sjdlskd alskjdlasd jklasdjksjd skdjskdj sdasd asdasdas s sadasdsa sksjd ksjksjd'
       },
       {
         id: 2, 
