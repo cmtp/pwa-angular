@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -13,6 +13,7 @@ import {MatListModule} from '@angular/material/list';
 import { TruncatePipe } from './pipes/truncate.pipe';
 import { LogroComponent } from './logro/logro.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { LogroComponent } from './logro/logro.component';
     BrowserModule,
     MatToolbarModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    AppRoutingModule
   ],
   providers: [
     LogrosService
