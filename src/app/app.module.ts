@@ -11,12 +11,14 @@ import {MatToolbarModule, MatToolbar} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import { TruncatePipe } from './pipes/truncate.pipe';
+import { LogroComponent } from './logro/logro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TruncatePipe
+    TruncatePipe,
+    LogroComponent
   ],
   imports: [
     BrowserModule,
